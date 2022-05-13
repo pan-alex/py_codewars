@@ -5,9 +5,6 @@
 #
 # Should return [92, -115, 17, 2, 2, 2], because this is the longest zero-sum sequence in the array.
 
-from operator import add
-from functools import reduce
-
 # Start with entire list and search smaller lists via nested loops:
 # Loop 1: for each element left -> right
 # Loop 2: for each element right -> left
