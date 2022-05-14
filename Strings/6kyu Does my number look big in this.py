@@ -26,6 +26,10 @@ def narcissistic( value ):
     return reduce(lambda acc, n: acc + int(n)**l, valueAsList, 0) == value
 
 
+# Quicker solution
+def narcissistic(value):
+    return value == sum(int(x) ** len(str(value)) for x in str(value))
+
 narcissistic(371)
 narcissistic(153)
 narcissistic(1652)
